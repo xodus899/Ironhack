@@ -2,7 +2,6 @@ class Car
 	def initialize(name,sound)
 		@name = name
 		@sound= sound
-
 		@city_array = []
 		end
 

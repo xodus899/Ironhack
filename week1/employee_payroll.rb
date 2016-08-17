@@ -23,7 +23,7 @@ end
 
 class SalariedEmployee < Employee
 	def initialize(name, email, salary)
-		@name = name
+		    @name = name
         @email = email
         @salary = salary
     end
