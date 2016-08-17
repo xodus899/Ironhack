@@ -42,8 +42,9 @@ class Post
 
 
 end
-
-
+# Posts per page is 3 so this would have 3 pages....
+# [0,1,2,  3,4,5,  6,]
+ 
 
 post1 = Post.new("post1","2016/08/11","hello today on August 16th I have run into a problem using the ruby platform.", false)
 post2 = Post.new("post2", "2016/09/12","Good evening post1, I am interested in your problem. What is the issue you are having?",false)
