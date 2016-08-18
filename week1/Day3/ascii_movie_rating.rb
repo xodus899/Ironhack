@@ -7,7 +7,9 @@ require("awesome_print")
 movies = []
 graph1 = ""
 
-
+puts ""
+puts "Your movies are now loading."
+puts""
 
 movies_array = IO.read("movies.txt").split("\n")
 
@@ -16,7 +18,10 @@ movies_array.each do |title|
 	first_result = the_search.movies[0]
 	hash = {title: first_result.title, rating: first_result.rating}
 	movies.push(hash)
+	puts "..."
+
 end
+
 
 
 
@@ -37,8 +42,12 @@ puts graph1
 puts"---------------------"
 puts "|1||2||3||4||5||6||7|"
 puts ""
+
+num=1
 movies.each do |the_print|
-	puts the_print[:title]
+	puts "#{num}. #{the_print[:title]}"
+num += 1
 end
+
 
 
