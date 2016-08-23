@@ -1,0 +1,15 @@
+<h1> Our Favorite Pizza </h1>
+<link rel="stylesheet" href="/styles.css">
+<img src= pizza.gif>
+
+<p> The best pizza you can make! </p>
+
+<ul>
+	<% @pizza_ingredients.each do |the_ingredient| %>
+	<li>
+		Ingredient: <%= the_ingredient %>
+	</li>
+
+	<% end %>
+</ul>
+
