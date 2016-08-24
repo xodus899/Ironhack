@@ -1,8 +1,25 @@
 require "sinatra"
+require "sinatra/reloader" if development?
+require "pry"
+enable(:sessions)
+
+get "/session_test/:text" do
+	text = params[:text]
+	session[:saved_value] = text
+end
+
+get "/session_show" do
+	"Now in the session:" + session[:saved_value]
+end
 
 get "/" do
 	erb :home
 	
+end
+
+get "/leadership" do
+
+	erb :leadership
 end
 
 get "/company" do
@@ -14,6 +31,8 @@ get "/about" do
 	#links to the about.erb file.
 	erb :about
 end
+
+
 
 get "/recipes" do
 	@pizza_ingredients = ["Cheese","Dough","Tomato Sauce",
@@ -46,10 +65,15 @@ get "/users/:username" do
 
 	@the_user = users.find { |the_user| the_user[:username] == @user_name_string}
 
+# binding.pry used for debugging.
+
 	if @the_user == nil
+		status(404)
 		erb :no_user
 	else
 	erb :user_profile
 end
+
+
 
 end
