@@ -1,0 +1,10 @@
+img {
+	width: 100px;
+	height: 150px;
+	float: left;
+}
+
+
+img:nth-child(3n+3){
+	clear:left;
+}

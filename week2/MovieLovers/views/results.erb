@@ -1,9 +1,16 @@
 <h1> Movie Trivia </h1>
+<link rel="stylesheet" href="/styles.css">
 
-<p> Showing </p> <% @movies.lenth %> </strong>
+<!-- <img src = "[...]" onClick = "alert('Correct!')"/>
+<img src = "[...]" onClick = "alert('Incorrect!')"/> -->
+
+<p> Showing </p> <%= @posters.length %> </strong>
 results.
 </p>
+<h3> Click on the movie below that was created in <%=   @correct_movie.year %> </h3>
 
-<% @movies.each do |the_movie|
-	 <img src="<%= the_movie.poster %>">
+<% @posters.each do |the_movie| %>
+
+	 <img src="<%= the_movie.poster %>" onClick ="alert('Correct!')">
 <% end %>
+
