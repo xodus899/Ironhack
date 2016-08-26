@@ -9,6 +9,7 @@ class Task
 		@@current_id += 1
 		@is_complete = false
 		@created_at = Time.now.to_i
+		@updated_at = nil
 	end
 
 	def id
@@ -36,6 +37,8 @@ class Task
 	def updated_content(new_content)
 		@content = new_content
 	end
+
+
 
 
 end

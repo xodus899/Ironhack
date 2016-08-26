@@ -62,15 +62,13 @@ class PasswordChecker
 	end
 
 		def check_password(email,password)
-		check_length("","")
-		check_upcase("","")
-		check_downcase("","")
-		check_number("","")
-		check_symbol("","")
-		check_email_password("","")
+		check_length("","") 
+		check_upcase("","") 
+		check_upcase("","") 
+		check_downcase("","") 
+		check_number("","") 
+		check_symbol("","") 
+		check_email_password("","") 
 
 	end
-
-
-
 end
