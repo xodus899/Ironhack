@@ -1,0 +1,15 @@
+<h2> Your word count is </h2>
+<h3> <%= @word_count %> </h3>
+
+<h3> Your original text was </h3>
+<h5> <%= @text %> </h5>
+
+
+<h4> On average it should take </h4>
+<h5> <%= @word_count/4.58.round %> seconds to read.</h5>
+
+<p> You used these common words </p>
+<p> <%= @frequency %>
+<br>
+<br>
+<a href = "/"> Back to home page</a>

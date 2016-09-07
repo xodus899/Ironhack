@@ -1,0 +1,14 @@
+<%# add navigation links to this file %>
+Links will go here
+<li>
+  <%= link_to_unless_current "Home", home_page_path %>
+</li>
+<li>
+	<%= link_to_unless_current "About" , about_path %>
+</li>
+<li>
+	<%= link_to_unless_current "Blog", blog_posts_path %> 
+</li>
+<li>
+	<%= link_to_unless_current "Contact", contact_page_path %>
+</li>
