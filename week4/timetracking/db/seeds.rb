@@ -1,8 +1,8 @@
 Project.create(name: "Ls3", description: "Ironhack is a...")
 
-Project.create(name: "Lsx")
+Project.create(name: "Lsx", description: "The Beast of Motors")
 
-Project.create(name: "Maintence Intervals", description: "Track my favorites")
+Project.create(name: "Scheduled Intervals", description: "Track my favorites")
 
 Project.create(name: "Diy section", description: "For the daredevil")
 
