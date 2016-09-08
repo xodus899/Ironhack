@@ -12,7 +12,7 @@ class TextinspectionsController < ApplicationController
 		
 		@frequency = {}
 
-		@count = @text.split("")
+		@count = @text.split(" ")
 
 		@count.each do |word|
 			if @frequency[word]
@@ -22,7 +22,7 @@ class TextinspectionsController < ApplicationController
 			end
 		end
 		
-
+		@sorted_text = @frequency.sort_by{|key,value| value}.reverse.take(10)
 		render :results
 	end
 

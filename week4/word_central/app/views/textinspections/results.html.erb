@@ -9,7 +9,9 @@
 <h5> <%= @word_count/4.58.round %> seconds to read.</h5>
 
 <p> You used these common words </p>
-<p> <%= @frequency %>
-<br>
-<br>
+ <% @sorted_text.each do |item|%>
+ <%= "#{item[0]}" + " = " + "#{item[1]}" + " times" %><br>
+ <% end %>
+
+
 <a href = "/"> Back to home page</a>
