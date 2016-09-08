@@ -1,0 +1,23 @@
+<h2> New Time Entry </h2>
+
+<%= form_for [@project, @time_entry] do |time_entry| %>
+
+	<%= time_entry.label :hours %>
+	<%= time_entry.text_field :hours %>
+
+	<br>
+
+	<%= time_entry.label :minutes %>
+	<%= time_entry.text_field :minutes %>
+
+	<br>
+
+	<%= time_entry.label :created_at %>
+	<%= time_entry.date_field :created_at %>
+
+	<br>
+
+	<%= time_entry.submit "Save" %>
+
+
+<% end %>
