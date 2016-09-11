@@ -1,0 +1,17 @@
+<h2>  Users Online </h2>
+
+<ul>
+<% @users.each do |the_user| %> 
+	<li> user: <%= the_user.name %> , <br> email:
+	<%= the_user.email %> </li><br>
+
+<% end %>
+
+</ul>
+
+<ul> 
+<li> 
+	<%= link_to "Click to Add New User", add_new_user_path %>
+</li>
+
+</ul>

@@ -1,0 +1,19 @@
+<h3> 
+Editing entries
+</h3>
+
+
+<%= form_for [@project, @time_entries] do |edit| %>
+
+	<%= edit.label :hours %>
+	<%= edit.text_field :hours %>
+	<br>
+	<%= edit.label :minutes %>
+	<%= edit.text_field :minutes %>
+	<br>
+	<%= edit.label :date %>
+	<%= edit.date_field :date %>
+	<br>
+	<%= edit.submit %>
+
+<% end %>

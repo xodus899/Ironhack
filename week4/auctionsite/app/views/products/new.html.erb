@@ -1,0 +1,17 @@
+
+<h2> Add Your Product </h2>
+
+<%= form_for @product do |products| %>
+
+	<%= products.label :title %>
+	<%= products.text_field :title %>
+<br>
+	<%= products.label :description %>
+	<%= products.text_field  :description %>
+<br>
+	<%= products.label :deadline %>
+	<%= products.datetime_field :deadline %>
+
+	<%= products.submit %>
+	
+<% end %>
