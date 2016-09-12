@@ -1,7 +1,11 @@
+<%= image_tag "drums.gif", width: 200%>
+
+
 <h3> List of Upcoming Jams </h3>
 
 
-<ul>
+
+<ul style = "list-style :square">
 <% @concert.each do |the_concert| %>
 	<li>
 	<%= link_to the_concert.name, "/concerts/#{the_concert.id}" %>

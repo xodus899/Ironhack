@@ -15,6 +15,7 @@ class ConcertsController < ApplicationController
 	def create
 
 		@created_concert = Concert.new(
+			
 			name:        params[:concert][:name],
 			artist:      params[:concert][:artist],
 			venue: 		 params[:concert][:venue],

@@ -1,22 +1,39 @@
-<h3> Concert Information </h3>
+<h3> <em> Concert Information </em> </h3>
 
-<ul style = "list-style :square">
+<ul style = " list-style :square ">
 	<li> 
 		$<%= @one_concert.price %><br>
 	</li>
+
 	<li>
 		Artist:<%= @one_concert.artist %><br>
 	</li>
+
 	<li>
 		Venue:<%= @one_concert.venue %><br>
 	</li>
+
 	<li>
 		Location:<%= @one_concert.city %><br>
 	</li>
+
 	<li>
-		Date:<%= @one_concert.date %><br>
+		Date:<%= @one_concert.date.strftime("%B, %d, at %I:%M %p" ) %><br>
 	</li>
+	
 	<li>
 		Description:<%= @one_concert.description %><br>
 	</li>
 </ul>
+
+
+<h5> Leave a comment </h5>
+
+<%= form_for @new_comment do |the_comment| %>
+	<%= the_comment.label :name %>
+	<%= the_commetn.text_field  :name , placeholder: " Name " %>
+	<br>
+	<%= the_comment.label :description %>
+	<%= the_comment.text_area :description, placeholder:" Comment here " %>
+
+<% end %>

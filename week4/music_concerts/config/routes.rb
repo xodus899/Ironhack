@@ -2,5 +2,5 @@ Rails.application.routes.draw do
 
 	get "/" , to: "homes#index"
  	
- 	resources :concerts
+ 	resources :concerts ,:comments
 end

@@ -1,3 +1,30 @@
+	<%= image_tag "band.gif" %>
+
+<h4 align = "center"> <em> Upcoming Concerts </em> </h4>
+
+<ul style = " list-style :none " align = " center ">
+
+<% @up_coming_concerts.each do |the_concert| %>
+
+	<%= link_to the_concert.name, "/concerts/#{the_concert.id}" %><br>
+</li>
+
+<% end %>
+</ul>
 
 
-<%= image_tag "homeimage.gif" %>
+
+
+
+<h4> <em> Concerts' For Today </em> </h4>
+
+<ul style = "list-style :none">
+
+<% @show_concert_for_date.each do |the_concert| %>
+
+	<li>
+	<%= link_to the_concert.name, "/concerts/#{the_concert.id}" %>
+	</li>
+
+<% end %>
+</ul>
