@@ -22,7 +22,7 @@ class TimeEntriesController < ApplicationController
 
 		project = Project.find(params[:project_id])
 
-		time_entry = project.time_entries.new(
+		time_entry = project.time_entries.new
 
 		time_entry.save
 
