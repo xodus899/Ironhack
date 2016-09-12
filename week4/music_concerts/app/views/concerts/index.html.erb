@@ -4,9 +4,11 @@
 <ul>
 <% @concert.each do |the_concert| %>
 	<li>
-	<%= link_to the_concert.name, "concerts/#{the_concert.id}" %>
+	<%= link_to the_concert.name, "/concerts/#{the_concert.id}" %>
 	</li>
 
 <% end %>
 </ul>
+
+<a href = "/concerts/new" ><em> Create a new concert </em> </a>
 

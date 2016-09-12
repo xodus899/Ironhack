@@ -1,0 +1,28 @@
+<h5> Input Concert Information </h5>
+
+<%= form_for @create_concert do |the_concert| %>
+	<%= the_concert.label :name %>
+	<%= the_concert.text_field  :name , placeholder: " Name of Concert" %>
+	<br>
+	<%= the_concert.label :artist %>
+	<%= the_concert.text_field  :artist, placeholder:" Name of Artist(s) " %>
+	<br>
+	<%= the_concert.label :venue %>
+	<%= the_concert.text_field  :venue, placeholder:" Name of Venue " %>
+	<br>
+	<%= the_concert.label :city %>
+	<%= the_concert.text_field  :city , placeholder:" City Location "%>
+	<br>
+	<%= the_concert.label :date %>
+	<%= the_concert.datetime_field :date %>
+	<br>
+	<%= the_concert.label :price %>
+	<%= the_concert.number_field :price , placeholder:" $ Price $ "%>
+	<br>
+	<%= the_concert.label :description %>
+	<%= the_concert.text_area  :description , placeholder:" Describe Your Concert "%>
+
+	<%= the_concert.button %>
+
+	<% end %>
+
