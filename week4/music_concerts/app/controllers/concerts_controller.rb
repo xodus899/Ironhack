@@ -8,8 +8,6 @@ class ConcertsController < ApplicationController
 
 	def new
 		@create_concert = Concert.new
-
-		
 	end
 
 	def create
@@ -33,6 +31,8 @@ class ConcertsController < ApplicationController
 
 	def show
 		@one_concert = Concert.find(params[:id])
+		@concert_comment = @one_concert.comments
+		@new_content = @one_concert.comments.new
 
 		render :show
 	end

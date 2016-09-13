@@ -26,14 +26,25 @@
 	</li>
 </ul>
 
+<h5>Voice Opinions</h5>
+
+	<% @concert_comment.each do |comment| %>
+
+		<%= comment.name %>
+		<%= comment.comment %>
+
+	<% end %>
+
 
 <h5> Leave a comment </h5>
 
-<%= form_for @new_comment do |the_comment| %>
+<%= form_for [@one_concert, @new_content] do |the_comment| %>
 	<%= the_comment.label :name %>
-	<%= the_commetn.text_field  :name , placeholder: " Name " %>
+	<%= the_comment.text_field  :name , placeholder: " Name " %>
 	<br>
-	<%= the_comment.label :description %>
-	<%= the_comment.text_area :description, placeholder:" Comment here " %>
+	<%= the_comment.label :comment %>
+	<%= the_comment.text_area :comment, placeholder:" Comment here " %>
+	<%= the_comment.submit  "Voice your opinion" %>
 
 <% end %>
+
