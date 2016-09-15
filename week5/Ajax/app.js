@@ -15,7 +15,7 @@ $(document).ready(function (){
 		var addCharacter = {
 			 name: $(".js-name").val(),  
 			 occupation: $(".js-occupation").val(),
-			 characterweapon: $(".js-weapon").val()
+			 weapon: $(".js-weapon").val()
 		}
 
 		$.ajax ({
