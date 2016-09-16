@@ -1,0 +1,48 @@
+<html>
+<head>
+
+	<meta charset= "utf-8">
+	<title>Spotify Mockup!</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script   src="http://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk= " crossorigin="anonymous"> 
+		</script>
+
+		<script	src= "app.js" type= "text/javascript"> 
+		</script>
+
+
+
+</head>
+<body>
+	<div class="widget">
+		<div class="header">
+		<!-- Try adding/removing these classes: -->
+		<!-- disabled -->
+		<!-- playing -->
+		<div class="btn-play disabled "></div>
+
+		<div class="metadata">
+		  <p class="js-title">Hunger of The Pine</p>
+		  <p class="js-author">alt-J</p>
+
+		  <div class="seekbar">
+		    <progress value="5" max="30"></progress>
+		  </div>
+		</div>
+		</div>
+		<div class="cover">
+		<img class= "js-album-image" src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+		</div>
+
+		<audio class= "js-audio-play" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+	</div>
+
+	<form > 
+		<input class= "js-search-field" type= "text" placeholder="Name of Track"> 
+			<button class= "js-search-button"> Find Track </button>
+	</form>
+
+</body>
+</html>
