@@ -46,7 +46,6 @@ $(document).ready(function () {
 		$(".js-title").html(songTitle);
 		$(".js-album-image").attr("src",albumImage);
 		$(".js-audio-play").attr("src",albumTrackPlay);
-		$(".btn-play").removeClass("disabled");
 
 
 	};
@@ -54,14 +53,15 @@ $(document).ready(function () {
 	function playTrack(triggerPlay){
 			console.log("playTrack");
 
+		$(".btn-play").removeClass("disabled");
 		$(".btn-play").toggleClass("playing");
 
 		if ($(".btn-play").hasClass("playing")){
 			$(".js-audio-play").trigger("play");
-			console.log("if");
+			console.log("if we get pizza");
 
 		} else {
-			console.log("else")
+			console.log("else we fill our belly")
 			$(".js-audio-play").trigger("pause");
 		
 		}
