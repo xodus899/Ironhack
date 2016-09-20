@@ -28,18 +28,6 @@ $(document).ready(function (){
 
 		});
 
-		function updateList (response) {
-			console.log("Success!");
-			console.log(response);
-
-		}
-	
-
-		function handleError (error) {
-			console.log("ERROR!");
-			console.log(error.responeText);
-		}
-
 	};
 
 	function fetchCharacters () {
