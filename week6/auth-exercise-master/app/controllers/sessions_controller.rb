@@ -1,7 +1,10 @@
 class SessionsController < ApplicationController
+	before_action :user_setup, only: [:new]
+	before_action :redirect_logged_in, only: [:new]
 	# log in form
 	def new
 
+		render :new
 	end
 	# create a session
 	def create
@@ -16,7 +19,7 @@ class SessionsController < ApplicationController
 	end
 	# delete the session
 	def destroy
-		session.clear
+		session.destroy
 
 			redirect_to "/"
 
