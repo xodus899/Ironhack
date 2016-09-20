@@ -4,22 +4,13 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first
+#   Character.create(name: 'Luke', movie: movies.first)
 
-roast_beef = Sandwich.create!(name:"Roast Beefy",bread_type:"Italian")
-hot_pastrami = Sandwich.create!(name:"Hot Pastrami",bread_type:"Rye")
-meatball = Sandwich.create!(name:"Meatball",bread_type:"Parmesan Oregano")
+sand1 = Sandwich.create!(name: "turkey", bread_type: "italian")
+sand2 = Sandwich.create!(name: "ham", bread_type: "wheat")
+sand3 = Sandwich.create!(name: "ruben", bread_type: "rye")
 
+ing1 = Ingredient.create!(name: "cheese", calories: 80)
+ing2 = Ingredient.create!(name: "tomatoes", calories: 30)
+ing3 = Ingredient.create!(name: "olives", calories: 50)
 
-lettuce = Ingredient.create!(name: "lettuce", calories: 2)
-artichokes = Ingredient.create!(name: "artichokes", calories: 50)
-mayonnaise = Ingredient.create!(name: "mayonnaise", calories: 20)
-spicy_mustard = Ingredient.create!(name: "spicy mustard", calories: 15)
-
-
-
-meatball.ingredients.push(lettuce)
-meatball.ingredients.push(artichokes)
-
-hot_pastrami.ingredients.push(spicy_mustard)
-hot_pastrami.ingredients.push(artichokes)

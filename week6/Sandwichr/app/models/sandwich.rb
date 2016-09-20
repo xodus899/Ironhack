@@ -1,4 +1,6 @@
 class Sandwich < ApplicationRecord
-	has_many :sandwichIngredients
-	has_many :ingredients, through:"sandwichIngredients"
+	has_many :sandwich_ingredients
+	has_many :ingredients, through: "sandwich_ingredients" 
+
+
 end
