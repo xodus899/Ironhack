@@ -11,8 +11,8 @@ class SandwichesController < ApplicationController
 	end
 
 	def show
-		sandwich = Sandwich.find_by(id: params[:id])
-		ingredients = sandwich.ingredients
+		@sandwich = Sandwich.find_by(id: params[:id])
+		@ingredients = @sandwich.ingredients
 		unless sandwich
 			render json: {error: "sandwich not found"},
 			status: 404
