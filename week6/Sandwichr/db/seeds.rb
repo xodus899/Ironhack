@@ -14,14 +14,3 @@ ing1 = Ingredient.create!(name: "cheese", calories: 80)
 ing2 = Ingredient.create!(name: "tomatoes", calories: 30)
 ing3 = Ingredient.create!(name: "olives", calories: 50)
 
-
-
-alain,greg,mike = User.create!([
-	
-{name: " Alain ", email: "alain@gmail.com", password: "password", password_confirmation: "password"},
-{name: " Mike ",  email: "mike@gmail.com",  password: "password", password_confirmation: "password"},
-{name: " Greg ",  email: "greg@gmail.com",  password: "password", password_confirmation: "password"},
-
-
-	])
-
