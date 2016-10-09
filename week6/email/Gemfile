@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
-# maybe add your gems above the pre generated one by the rails app.???
-gem 'devise'
 
-gem 'sprockets', '3.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
