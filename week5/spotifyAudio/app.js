@@ -2,9 +2,9 @@
 console.log("Lets order pizza.")
 
 $(document).ready(function () {
-
 	$(".js-search-button").on("click",findTrack);
 	$(".btn-play").on("click",playTrack);
+	
 	
 
 });
